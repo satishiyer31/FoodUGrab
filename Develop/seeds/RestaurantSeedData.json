@@ -1,0 +1,22 @@
+[
+    {
+      "name": "I-Hop",
+        "type": "American",
+       "location": "989 Market Street, Denver 80815",
+       "phone": "503-123-5678"
+    },
+    {
+        "name": "Taj Mahal",
+          "type": "Indian",
+         "location": "700 Elk Grove, Boulder 80025",
+         "phone": "303-123-5678"
+      },
+      {
+        "name": "Pizza Hut",
+          "type": "Pizzeria",
+         "location": "700 Mariner Dr, Superior 80027",
+         "phone": "303-567-1278"
+      }
+      
+  ]
+  

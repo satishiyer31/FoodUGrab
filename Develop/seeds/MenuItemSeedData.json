@@ -1,0 +1,39 @@
+[
+    {
+      "name": "Pan Cakes",
+      "description": "savory item with fruits and syrup",
+       "price": 15.99,
+       "restaurant_id": 1
+       
+    },
+    {
+        "name": "Breakfast Burrito",
+        "description": "Wrap with veggies and",
+        "price": 11.99,
+        "restaurant_id": 1
+    },
+    {
+        "name": "Paneer Biryani",
+        "description": "Basmati Rice with Paneer & veggies",
+        "price": 14.99,
+        "restaurant_id": 2
+    },
+    {
+        "name": "Veg Fried Rice",
+        "description": "Veggie Fried rice with flavor & spice",
+        "price": 16.99,
+        "restaurant_id": 2
+    },
+    {
+        "name": "Veggie Lovers Pizza",
+        "description": "Pizza with toppings of Bell peppers, mushroom, onion & olives",
+        "price": 18.99,
+        "restaurant_id": 3
+    },
+    {
+        "name": "Cheese Pizza",
+        "description": "Classic Cheese Pizza",
+        "price": 11.99,
+        "restaurant_id": 3
+    }
+  ]

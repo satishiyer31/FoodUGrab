@@ -1,0 +1,27 @@
+[
+    {
+      "first_name": "Saul",
+      "last_name": "goodman",
+       "email": "sal@hotmail.com",
+       "phone": "503-123-5678",
+       "points": 550,
+       "password": "password"
+    },
+    {
+        "first_name": "Ben",
+        "last_name": "Holioke",
+         "email": "ben@hotmail.com",
+         "phone": "303-123-5678",
+         "points": 150,
+         "password": "password"
+      },
+      {
+        "first_name": "Walter",
+        "last_name": "White",
+         "email": "walter@hotmail.com",
+         "phone": "503-123-5678",
+         "points": 550,
+         "password": "password"
+      }
+  ]
+  
