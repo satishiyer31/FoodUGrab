@@ -49,7 +49,7 @@ Order.belongsToMany(Menu_item, {
       unique: false
     },
     // Define an alias for when data is retrieved
-    as: 'order_item'
+    as: 'item_orders'
   });
   
   Menu_item.belongsToMany(Order, {
@@ -59,7 +59,7 @@ Order.belongsToMany(Menu_item, {
       unique: false
     },
     // Define an alias for when data is retrieved
-    as: 'order_item'
+    as: 'item_orders'
   });
 
 
