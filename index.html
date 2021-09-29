@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Hub</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/e176ffb28c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -47,22 +48,25 @@
         </p>
       </section>
       <section class="form">
-        <h2>Login</h2>
-        <form>
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" value="First Name" /><br />
-          <label for="lname">Last name:</label><br />
-          <input
-            type="text"
-            id="lname"
-            name="lname"
-            value="Last Name"
-          /><br /><br />
-          <label for="pword">Password</label><br />
-          <input type="text" id="pword" name="pword" value="Password" /><br />
-          <input type="submit" value="Submit" />
-        </form>
-      </section>
+            <form>
+                <h2 style="text-align:center">Login with Social Media or With Your Account</h2>
+                  <a href="#" class="fb btn">
+                    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                  </a>
+                  <a href="#" class="twitter btn">
+                    <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                  </a>
+                  <a href="#" class="google btn">
+                    <i class="fa fa-google fa-fw"></i> Login with Google+
+                  </a>
+                    <p>Or sign in manually:</p>
+          
+                  <input class="sign-in" type="text" name="username" placeholder="Username" required>
+                  <input class="sign-in" type="password" name="password" placeholder="Password" required>
+                  <input type="submit" value="Login">
+            </form>
+                <a href="#" style="color:white" class="sign-up">Sign up</a>
+                <a href="#" style="color:white" class="sign-up">Forgot password?</a>
     </section>
     <footer class="footer">
       <a class="link foot" href="#">About</a>
