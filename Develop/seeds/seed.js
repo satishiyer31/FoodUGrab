@@ -1,4 +1,4 @@
-const sequelize = require('../config/connections');
+const sequelize = require('../config/connection');
 const { Customer, Restaurant, Menu_item } = require('../models');
 
 const CustomerSeedData = require('./CustomerSeedData.json')
