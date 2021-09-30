@@ -24,7 +24,7 @@ Order_item.init(
             },
         },
     
-    menu_id: {
+    menu_item_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {

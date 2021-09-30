@@ -1,12 +1,17 @@
 const express = require('express');
-const routes = require('./routes');
+const routes = require('./controller');
 const sequelize = require('./config/connection');
-
+const hbs = require('express-handlebars');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+app.engine('handlebars',hbs({defaultLayout:"main"})); //main is the resulting placeholder
+app.set("view engine","handlebars");
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.use(express.static("public"));
 
 // turn on routes
 app.use(routes);
