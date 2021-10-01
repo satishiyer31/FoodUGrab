@@ -2,11 +2,42 @@
 
 async function getRestaurants() {
 
+    console.log('Getting Restaurants');
+    // var restaurants =[];
+    var resHtml="";
+    // fetch('/api/restaurants').then(response => response.json())
+    // .then(data => {console.log(data); restaurants = data});
 
-    const restaurants = await fetch('/api/restaurants');
+    const response = await fetch('/api/restaurants');
+    const restaurants = await response.json();
 
-    if(restaurants) {
-        console.log(restaurants);
-    }
+    console.log(restaurants);
+    restaurants.forEach(restaurant => {
+        
+    resHtml += `<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+        <img src="..." class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title">${restaurant.name}</h5>
+            <p class="card-text">${restaurant.location}</p>
+            <a href="/menu/${restaurant.id}" class="btn btn-primary">Select Restaurant</a>
+        </div>
+        </div>
+    </div>
+    </div>`
+    
+    
+
+    });
+    console.log(resHtml);
+    const resDiv = document.createElement('div');
+    resDiv.textContent = resHtml;
+    
+    document.querySelector('body').appendChild(resDiv);
 
 }
+
+getRestaurants();
