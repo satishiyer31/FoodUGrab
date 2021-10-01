@@ -1,3 +1,4 @@
+console.log("Inside Login.js");
 const loginFormHandler = async (event) => {
     event.preventDefault();
   
@@ -5,14 +6,15 @@ const loginFormHandler = async (event) => {
     const password = document.querySelector('#pwd').value.trim();
   
     if (email && password) {
-      const response = await fetch('/api/users/login', {
+      const response = await fetch('/api/customers/login', {
         method: 'POST',
         body: JSON.stringify({ email, password }),
         headers: { 'Content-Type': 'application/json' },
       });
   
       if (response.ok) {
-        document.location.replace('/');
+          console.log("Logged in");
+        document.location.replace('/restaurants');
       } else {
         alert('Failed to log in.');
       }
@@ -35,7 +37,7 @@ const loginFormHandler = async (event) => {
   
       if (response.ok) {
         alert("loggedin");
-        document.location.replace('/');
+        document.location.replace('/restaurants');
       } else {
         alert('Failed to sign up.');
       }
@@ -46,7 +48,7 @@ const loginFormHandler = async (event) => {
     .querySelector('#login-form')
     .addEventListener('submit', loginFormHandler);
   
-  document
-    .querySelector('.signup-form')
-    .addEventListener('submit', signupFormHandler);
+//   document
+//     .querySelector('.signup-form')
+//     .addEventListener('submit', signupFormHandler);
   
