@@ -2,8 +2,22 @@ const express = require("express");
 const routes = require("./controller");
 const sequelize = require("./config/connection");
 const hbs = require("express-handlebars");
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+const sess = {
+  secret: 'Login',
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
+};
+
+app.use(session(sess));
 
 app.engine("handlebars", hbs({ defaultLayout: "main" })); //main is the resulting placeholder
 app.set("view engine", "handlebars");
