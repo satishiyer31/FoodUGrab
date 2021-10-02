@@ -1,11 +1,11 @@
 {
-  "name": "Develop",
+  "name": "develop",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "Develop/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": " cd Develop && node server.js",
     "seeds": "node seeds/seed.js"
   },
   "keywords": [],
