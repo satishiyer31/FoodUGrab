@@ -2,7 +2,7 @@
 
 async function getMenuItems() {
 
-    console.log('Getting MenuItems');
+    // console.log('Getting MenuItems');
     
     var menu="";
     var url = document.URL;
@@ -26,8 +26,11 @@ async function getMenuItems() {
         <div class="col-md-8">
         <div class="card-body">
             <h5 class="card-title">${menuItem.name} : $${menuItem.price}  </h5>
-            <p class="card-text">${menuItem.description}</p>
-            <a href="" class="btn btn-primary" data-restaurantID =${param} data-menuItem=${menuItem.id} data-itemName=${menuItem.name} data-price=${menuItem.price} data-toggle="modal" data-target="#myModal"> Add Item : $${menuItem.price}</a>
+            <p class="card-text">${menuItem.description}
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+            </p>
+            <a id ="${menuItem.id}"  href="" class="btn btn-primary" data-restaurantID =${param} data-menuItem=${menuItem.id} data-itemName=${menuItem.name} data-price=${menuItem.price} data-toggle="modal" data-target="#myModal"> Add Item : $${menuItem.price}</a>
         </div>
         </div>
     </div>
@@ -36,11 +39,11 @@ async function getMenuItems() {
     
 
     });
-    console.log(menu);
+    // console.log(menu);
     const resDiv = document.createElement('div');
     resDiv.innerHTML = menu;
     
-    document.querySelector('body').appendChild(resDiv);
+    document.querySelector('#menuitem').appendChild(resDiv);
 
 }
 
@@ -48,9 +51,25 @@ getMenuItems();
 
 document.addEventListener('click', function(e){
     e.preventDefault();
-    const modal = document.querySelector("#myModal");
+    const basket = document.querySelector('#basket');
+    const basketDiv = document.createElement('div');
+    
+
     if(e.target.matches('a')){
-        modal.modal('show');
+        
+        const itemName = document.createElement('span');
+        // itemName.textContent = e.target.dataset.itemName;
+        console.log(e.target);
+        basketDiv.appendChild(itemName);
+
+        basket.appendChild(basketDiv);
+        
+    }
+
+    if(e.target.matches('input')){
+        
+        
+        
     }
     
 })
