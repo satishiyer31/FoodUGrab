@@ -23,7 +23,7 @@ async function getRestaurants() {
         <div class="card-body">
             <h5 class="card-title">${restaurant.name}</h5>
             <p class="card-text">${restaurant.location}</p>
-            <a href="/menu/${restaurant.id}" class="btn btn-primary">Select Restaurant</a>
+            <a href="/restaurant/${restaurant.id}" class="btn btn-primary">Select Restaurant</a>
         </div>
         </div>
     </div>
@@ -34,7 +34,7 @@ async function getRestaurants() {
     });
     console.log(resHtml);
     const resDiv = document.createElement('div');
-    resDiv.textContent = resHtml;
+    resDiv.innerHTML = resHtml;
     
     document.querySelector('body').appendChild(resDiv);
 
