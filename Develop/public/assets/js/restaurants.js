@@ -1,5 +1,6 @@
 
 
+
 async function getRestaurants() {
 
     console.log('Getting Restaurants');
@@ -11,7 +12,7 @@ async function getRestaurants() {
     const response = await fetch('/api/restaurants');
     const restaurants = await response.json();
 
-    console.log(restaurants);
+    console.log(restaurants.length);
     restaurants.forEach(restaurant => {
         
     resHtml += `<div class="card mb-3" style="max-width: 540px;">
@@ -41,3 +42,4 @@ async function getRestaurants() {
 }
 
 getRestaurants();
+
