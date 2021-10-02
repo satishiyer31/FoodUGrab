@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-
+}
+
+body {
+    background-image: url("../Img/web-background.jpeg")
+}
+.navbar {
+    height: 10%;
+    color: white ;
+    background-color: rgb(000,000,000,0.8);
+}
+
+.margin-top { 
+    margin-top: 13%
+}
+
+.tab {
+    color:honeydew
+}
+ 
+#sign-up-form {
+    margin-top:13%;
+    color:white;
+    background-color: rgb(000,000,000,0.8);
+}
+
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+    background-color: #3B5998;
+    color: white;
+    width: 95%;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+    width:95%;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+    width: 95%;
+  }
+  
+  /* style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }

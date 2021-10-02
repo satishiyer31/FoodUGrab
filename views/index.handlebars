@@ -1,25 +1,41 @@
   
  
- <section class="form">
-            <form id ="login-form">
-                <h2 style="text-align:center">Login with Social Media or With Your Account</h2>
-                  <a href="#" class="fb btn">
-                    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-                  </a>
-                  <a href="#" class="twitter btn">
-                    <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-                  </a>
-                  <a href="#" class="google btn">
-                    <i class="fa fa-google fa-fw"></i> Login with Google+
-                  </a>
-                    <p>Or sign in manually:</p>
-          
-                  <input id="user" class="sign-in" type="text" name="username" placeholder="Username" required>
-                  <input id="pwd"class="sign-in" type="password" name="password" placeholder="Password" required>
-                  <input type="submit" value="Login">
-            </form>
-                <a href="#" style="color:white" class="sign-up">Sign up</a>
-                <a href="#" style="color:white" class="sign-up">Forgot password?</a>
-  </section>
+ <<div class="container-fluid p-3 border form col-md-4" id="sign-up-form">
+      <form>
+        <h2 style="text-align: center">
+          Login with Social Media or With Your Account
+        </h2>
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+        </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn">
+          <i class="fa fa-google fa-fw"></i> Login with Google+
+        </a>
+        <p>Or sign in manually:</p>
+
+        <input
+          class="sign-in"
+          type="text"
+          name="username"
+          placeholder="Username"
+          required
+        />
+        <input
+          class="sign-in"
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <input type="submit" value="Login" />
+      </form>
+      <button onclick="document.getElementById('id01').style.display='block'">
+        Sign Up
+      </button>
+      <a href="#" style="color: white" class="sign-up">Forgot password?</a>
+    </div>
 
     <script src="./assets/js/login.js"></script>
