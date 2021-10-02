@@ -58,8 +58,8 @@ document.addEventListener('click', function(e){
     if(e.target.matches('a')){
         
         const itemName = document.createElement('span');
-        // itemName.textContent = e.target.dataset.itemName;
-        console.log(e.target);
+        itemName.textContent = e.target.getAttribute("itemName");
+        
         basketDiv.appendChild(itemName);
 
         basket.appendChild(basketDiv);

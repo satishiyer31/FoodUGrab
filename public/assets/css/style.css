@@ -4,9 +4,10 @@
   font-family: 'Lato', sans-
 }
 
-body {
+/* body {
   background-image: url("../Img/web-background.jpeg")
-}
+} */
+
 .navbar {
   height: 10%;
   color: white ;
