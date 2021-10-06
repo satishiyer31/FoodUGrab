@@ -4,9 +4,9 @@
   font-family: 'Lato', sans-
 }
 
-/* body {
+body {
   background-image: url("../Img/web-background.jpeg")
-} */
+}
 
 .navbar {
   height: 10%;
@@ -16,6 +16,12 @@
 
 .margin-top { 
   margin-top: 13%
+}
+
+.sign-up {
+  background-color: rgb(000,000,000,0.8);
+  color:honeydew;
+  margin-top:8%;
 }
 
 .tab {
