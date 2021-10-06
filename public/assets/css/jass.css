@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("../Img/web-background.jpeg")
+    /* background-image: url("../Img/web-background.jpeg") */
 }
 .navbar {
     height: 10%;
@@ -56,4 +56,12 @@ body {
   
   input[type=submit]:hover {
     background-color: #45a049;
+  }
+
+  table #basket {
+    visibility: hidden;
+  }
+
+  button .no-border {
+    border: none;
   }
