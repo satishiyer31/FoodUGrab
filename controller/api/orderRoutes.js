@@ -27,7 +27,16 @@ router.get('/:id',async(req,res) => {
 
 });
 
+router.post('/', async(req,res) => {
+    // try{
+    console.log("Req body is: ", req.body);    
+    const order = await Order.create(req.body);
+        res.status(200).json(order);
 
+//     }catch(err){
+//         res.status(400).json(err);
+//     }
+})
 
 
 module.exports = router;

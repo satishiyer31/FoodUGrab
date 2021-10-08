@@ -15,8 +15,8 @@ router.get('/restaurant/:id', (req,res) =>{
     res.render("menu",{});
 });
 
-router.get('/checkout',(req,res)=>{
+router.get('/paymentsuccess',(req,res)=>{
     console.log("reached checkout route");
-    res.render("checkout",{});
+    res.render("order",{});
 })
 module.exports = router;
