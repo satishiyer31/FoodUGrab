@@ -11,6 +11,8 @@ async function getMenuItems() {
 
     const resID = url.split('/');
     const param = resID[resID.length-1];
+    
+    sessionStorage.setItem("restaurant_id",param);
 
     const response = await fetch(`/api/restaurants/${param}`);
     const data = await response.json();
@@ -186,7 +188,9 @@ document.addEventListener('click', function(e){
 
         if( e.target.id == 'checkout')  {
             console.log("Checkout Clicked");
-            this.location.replace('/checkout');
+            this.location.replace('https://buy.stripe.com/test_14k9CjdMd8Ng5dm8ww');
+            createOrder();
+
         }
         
     }
@@ -198,3 +202,4 @@ function updateSessionStorage() {
     sessionStorage.setItem("orderItems",JSON.stringify(orderItems));
 
 }
+

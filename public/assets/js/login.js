@@ -14,6 +14,10 @@ const loginFormHandler = async (event) => {
   
       if (response.ok) {
           console.log("Logged in");
+          data = await response.json();
+          // console.log(data);
+          sessionStorage.setItem("customer_id",data.user.id);
+          
         document.location.replace('/restaurants');
       } else {
         alert('Failed to log in.');
