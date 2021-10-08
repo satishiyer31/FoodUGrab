@@ -1,6 +1,4 @@
 
-
-
 async function getRestaurants() {
 
     console.log('Getting Restaurants');
@@ -15,10 +13,10 @@ async function getRestaurants() {
     console.log(restaurants.length);
     restaurants.forEach(restaurant => {
         
-    resHtml += `<div class="card mb-3" style="max-width: 540px;">
+    resHtml += `<div class="card mx-auto mt-3 shadow-sm" style="max-width: 540px;">
     <div class="row g-0">
         <div class="col-md-4">
-        <img src="..." class="img-fluid rounded-start" alt="...">
+        <img src="/assets/Img/${restaurant.img}" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col-md-8">
         <div class="card-body">
@@ -35,6 +33,7 @@ async function getRestaurants() {
     });
     console.log(resHtml);
     const resDiv = document.createElement('div');
+    resDiv.setAttribute("class","row my-3");
     resDiv.innerHTML = resHtml;
     
     document.querySelector('body').appendChild(resDiv);

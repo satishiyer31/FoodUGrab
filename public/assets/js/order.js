@@ -20,7 +20,7 @@ async function createOrder() {
         const data =  await response.json();
         
         console.log('Order created ' + data.id);
-
+        sessionStorage.setItem("order_id",data.id);
         var orderItems =[];
         var items ={};
         for (let index = 0; index < savedOrderItems.length; index++) {
@@ -40,11 +40,8 @@ async function createOrder() {
             
         }
 
-        // const response2 = await fetch('/api/orderitems',{
-        //     method: 'POST',
-        //     body: JSON.stringify(orderItems),
-        //     headers: { 'Content-Type': 'application/json' }
-        // });
+        setTimeout(() =>
+        location.replace('/order_confirmation'),3000)
     }
 
     
