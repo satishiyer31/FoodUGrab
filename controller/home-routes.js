@@ -24,4 +24,10 @@ router.get('/order_confirmation',(req,res)=>{
     // console.log("reached checkout route");
     res.render("order_confirmation",{});
 })
+
+router.get('/see_orders',(req,res)=>{
+    // console.log("reached checkout route");
+    res.render("see_orders",{});
+})
+
 module.exports = router;

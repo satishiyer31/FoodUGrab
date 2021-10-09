@@ -41,7 +41,7 @@ async function createOrder() {
         }
 
         setTimeout(() =>
-        location.replace('/order_confirmation'),3000)
+        location.replace('/order_confirmation'),5000)
     }
 
     

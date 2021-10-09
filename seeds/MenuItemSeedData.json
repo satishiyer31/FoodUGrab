@@ -15,6 +15,34 @@
         "img": "breakfast_burito.png"
     },
     {
+        "name": "Seasonal Pancake combo",
+        "description": "Pancakes with choice of syrup, veggies and sides",
+        "price": 16.99,
+        "restaurant_id": 1,
+        "img": "pancake_combo.png"
+    },
+    {
+        "name": "Hash Browns",
+        "description": "Crispy seasoned potato",
+        "price": 4,
+        "restaurant_id": 1,
+        "img": "hashbrown.png"
+    },
+    {
+        "name": "French Fries",
+        "description": "Crispy french fries",
+        "price": 2,
+        "restaurant_id": 1,
+        "img": "frenchfries.png"
+    },
+    {
+        "name": "Original Buttermilk Pancakes",
+        "description": "Buttermilk flavored pancakes with honey & fruits",
+        "price": 16,
+        "restaurant_id": 1,
+        "img": "buttermilk_pancakes.png"
+    },
+    {
         "name": "Paneer Biryani",
         "description": "Basmati Rice with Paneer & veggies",
         "price": 14.99,
