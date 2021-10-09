@@ -27,6 +27,20 @@ router.get('/:id',async(req,res) => {
 
 });
 
+//orders by restaurant ID
+router.get('/restaurants/:id',async(req,res) => {
+    try{
+        //
+        const orders = await Order.findAll({where:{restaurant_id:req.params.id}},{include: [{model:Menu_item, through: Order_item, as: "item_orders", required: true}]});
+        res.status(200).json(orders);
+    }
+    catch(err){
+        res.status(500).json(err);
+    }
+
+});
+
+
 router.post('/', async(req,res) => {
     // try{
     console.log("Req body is: ", req.body);    
