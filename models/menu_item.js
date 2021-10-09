@@ -35,6 +35,10 @@ Menu_item.init(
             key:'id',
           },
       },
+    img: {
+      type: DataTypes.STRING,
+      allowNull:true,
+    }
   },
   {
     

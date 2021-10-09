@@ -3,20 +3,65 @@
       "name": "I-Hop",
         "type": "American",
        "location": "989 Market Street, Denver 80815",
-       "phone": "503-123-5678"
+       "phone": "503-123-5678",
+       "img": "ihop.png"
     },
     {
         "name": "Taj Mahal",
           "type": "Indian",
          "location": "700 Elk Grove, Boulder 80025",
-         "phone": "303-123-5678"
+         "phone": "303-123-5678",
+         "img": "taj.png"
       },
       {
         "name": "Pizza Hut",
-          "type": "Pizzeria",
+          "type": "Pizza",
          "location": "700 Mariner Dr, Superior 80027",
-         "phone": "303-567-1278"
+         "phone": "303-567-1278",
+         "img": "pizzahut.png"
+      },
+      {
+        "name": "Burger King",
+          "type": "American",
+         "location": "700 Erie Parkway, Erie 80516",
+         "phone": "303-567-2189",
+         "img": "burger.png"
+      },
+      {
+        "name": "Ting's Chinese",
+          "type": "Chinese",
+         "location": "700 Folsom Rd, Boulder 80025",
+         "phone": "703-579-2819",
+         "img": "chinese.png"
+      },
+      {
+        "name": "Falafel Joint",
+          "type": "Falafel",
+         "location": "986 Louisville Downtown 80196",
+         "phone": "723-567-2189",
+         "img": "falafel.png"
+      },
+      {
+        "name": "Salad Greens",
+          "type": "Salad",
+         "location": "924 Diamond Circle, Lafayette 80514",
+         "phone": "303-567-2190",
+         "img": "salad.png"
+      },
+      {
+        "name": "Sakura Sushi & Grill",
+          "type": "Sushi",
+         "location": "333 Arapahoe Rd, Longmont 80814",
+         "phone": "903-567-3245",
+         "img": "sushi.png"
+      },
+      {
+        "name": "Busaba Thai",
+          "type": "Thai",
+         "location": "Shop 6 Mariners Drive, Louisville 80516",
+         "phone": "223-876-1234",
+         "img": "thai.png"
       }
-      
+
   ]
   

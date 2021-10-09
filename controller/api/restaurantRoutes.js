@@ -17,13 +17,13 @@ router.get('/',async(req,res) => {
 
 //Get restuarant by ID
 router.get('/:id',async(req,res) => {
-    try{
+    // try{
         const restaurants = await Restaurant.findByPk(req.params.id, {include: [{model:Menu_item}]});
         res.status(200).json(restaurants);
-    }
-    catch(err){
-        json.status(500).json(err);
-    }
+    // }
+    // catch(err){
+    //     res.status(500).json(err);
+    // }
 
 });
 

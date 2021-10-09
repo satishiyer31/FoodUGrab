@@ -23,7 +23,7 @@
 }
 
 #sign-up-form {
-  margin-top:13%;
+  margin-top:40%;
   color:white;
   background-color: rgb(000,000,000,0.8);
 }
@@ -58,3 +58,8 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
+
+/* #menu-card img{
+  width: 140px;
+  
+} */

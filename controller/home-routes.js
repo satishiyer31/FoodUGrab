@@ -19,4 +19,9 @@ router.get('/paymentsuccess',(req,res)=>{
     console.log("reached checkout route");
     res.render("order",{});
 })
+
+router.get('/order_confirmation',(req,res)=>{
+    // console.log("reached checkout route");
+    res.render("order_confirmation",{});
+})
 module.exports = router;

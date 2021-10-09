@@ -13,16 +13,16 @@ body {
     background-color: rgb(000,000,000,0.8);
 }
 
-.margin-top { 
+/* .margin-top { 
     margin-top: 13%
-}
+} */
 
 .tab {
     color:honeydew
 }
  
 #sign-up-form {
-    margin-top:13%;
+    margin-top:40%;
     color:white;
     background-color: rgb(000,000,000,0.8);
 }
@@ -58,9 +58,9 @@ body {
     background-color: #45a049;
   }
 
-  table #basket {
+  /* #basketTable {
     visibility: hidden;
-  }
+  } */
 
   button .no-border {
     border: none;

@@ -1,49 +1,81 @@
-  <nav>
-      <a class="link" href="#">Partners</a>
-      <a class="link" href="#">Mission Statement</a>
-      <a class="link" href="#">Our Team</a>
-      <a class="link" href="#">Contact</a>
-      
-</nav>
- 
- <<div class="container-fluid p-3 border form col-md-4" id="sign-up-form">
-      <form id ="login-form">
-        <h2 style="text-align: center">
-          Login with Social Media or With Your Account
-        </h2>
-        <a href="#" class="fb btn">
-          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-        </a>
-        <a href="#" class="twitter btn">
-          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-        </a>
-        <a href="#" class="google btn">
-          <i class="fa fa-google fa-fw"></i> Login with Google+
-        </a>
-        <p>Or sign in manually:</p>
 
-        <input
-          class="sign-in"
-          type="text"
-          name="username"
-          placeholder="Username"
-          id ="user"
-          required
-        />
-        <input
-          class="sign-in"
-          type="password"
-          name="password"
-          id="pwd"
-          placeholder="Password"
-          required
-        />
-        <input type="submit" value="Login" />
-      </form>
-      <button onclick="document.getElementById('id01').style.display='block'">
-        Sign Up
-      </button>
-      <a href="#" style="color: white" class="sign-up">Forgot password?</a>
+  <div class="row">
+    <div class="col-9">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="/assets/Img/indian.jpeg"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="/assets/Img/fries.jpeg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="/assets/Img/pasta.png"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="col-3">
+      <div class="p-3 border form" id="sign-up-form">
+        <form id="login-form">
+          <h2 style="text-align: center">
+            Login with Social Media or With Your Account
+          </h2>
+          <a href="#" class="fb btn">
+            <i class="fa fa-facebook fa-fw"></i>
+            Login with Facebook
+          </a>
+          <a href="#" class="twitter btn">
+            <i class="fa fa-twitter fa-fw"></i>
+            Login with Twitter
+          </a>
+          <a href="#" class="google btn">
+            <i class="fa fa-google fa-fw"></i>
+            Login with Google+
+          </a>
+          <p>Or sign in manually:</p>
+          <input
+            class="sign-in"
+            type="text"
+            name="username"
+            placeholder="Username"
+            id="user"
+            required
+          />
+          <input
+            class="sign-in"
+            type="password"
+            name="password"
+            id="pwd"
+            placeholder="Password"
+            required
+          />
+          <input type="submit" value="Login" />
+        </form>
+        <button>
+          Sign Up
+        </button>
+        <a href="#" style="color: white" class="sign-up">Forgot password?</a>
+      </div>
 
-    <script src="./assets/js/login.js"></script>
+    </div>
+  </div>
+
+
+<script src="./assets/js/login.js"></script>
